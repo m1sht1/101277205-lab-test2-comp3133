@@ -1,0 +1,33 @@
+<h1>Lab Test 2</h1>
+<h2>Sanjana sharmin</h2>
+<h2>ID: 101277205</h2>
+
+
+<h1>SpaceX Mission Launch List</h1>
+
+
+<ul>
+  <li *ngFor="let item of data">
+
+    <!-- Flight Number:
+    {{item.flight_number}} <br> -->
+
+    Mission name :
+    {{item.mission_name}} <br>
+
+    <!-- Mission ID :
+    {{item.mission_id}} <br> -->
+
+    Launch Year :
+    {{item.launch_year}} <br>
+
+    Details:
+    {{item.details}} <br>
+
+    Small Mission Patch :
+    {{ item.mission_patch_small }}
+
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
